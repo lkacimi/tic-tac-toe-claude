@@ -4,15 +4,30 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .App h1 {
-  font-size: 56px;
-  margin-bottom: 40px;
-  color: white;
+  font-size: 72px;
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, #ffffff 0%, #5eead4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-align: center;
-  font-weight: 700;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  letter-spacing: -1px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  text-shadow: none;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
